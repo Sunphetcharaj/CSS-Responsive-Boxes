@@ -1,3 +1,36 @@
 body {
   background: blanchedalmond;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  margin-bottom: 3px;
+}
+.contain {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+[class ^="block"]{
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+  .block-a {
+  flex-basis: 100%;
+  width: 100%;
+}
+.block-b {
+  flex-basis: 80%
+}
+.block-c {
+  flex-basis: 20%;
+}
+@media screen and (max-width: 600px) {
+  .contain {
+flex-direction: column;
+  }
+}
